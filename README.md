@@ -59,3 +59,25 @@ appコンテナに入り、
   
 以下のサイトを開き、laravelのトップ画面が開けばOK 
 http://localhost:8080/
+
+## PgAdmin4
+
+### 使い方
+
+- ログイン方法
+
+以下にアクセス
+http://localhost:81/
+
+mailaddress と password は docker-compose.yml を見る
+
+あとは以下を見ながら進める。
+
+docker compose を使って PostgreSQL を構築する  
+https://mebee.info/2020/12/04/post-24686/
+
+Hostname/address を調べる方法  
+docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' [コンテナ名]
+
+テーブルの確認方法  
+https://postgresweb.com/post-3926
