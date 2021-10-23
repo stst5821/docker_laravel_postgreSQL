@@ -60,6 +60,31 @@ appコンテナに入り、
 以下のサイトを開き、laravelのトップ画面が開けばOK 
 http://localhost:8080/
 
+## マイグレーションまで
+
+### .envファイル修正
+
+.envファイルの下記の場所にDBの情報を記入する。
+DB_DATABASE
+DB_USERNAME
+DB_PASSWORD
+には、DockerのDBコンテナの情報を入力する。
+
+```
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=****
+DB_USERNAME=****
+DB_PASSWORD=****
+```
+参考：
+https://tektektech.com/laravel-postgresql-connect-and-use/
+
+### マイグレーションファイル作成
+
+
+
 ## PgAdmin4
 
 ### 使い方
