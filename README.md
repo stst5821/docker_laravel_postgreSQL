@@ -83,6 +83,12 @@ https://tektektech.com/laravel-postgresql-connect-and-use/
 
 ### マイグレーションファイル作成
 
+postsテーブルのmigrationファイルを作成する
+
+```
+php artisan make:migration create_posts_table
+```
+
 ```
 php artisan migrate
 ```
