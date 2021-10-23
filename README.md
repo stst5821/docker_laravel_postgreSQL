@@ -83,7 +83,9 @@ https://tektektech.com/laravel-postgresql-connect-and-use/
 
 ### マイグレーションファイル作成
 
-
+```
+php artisan migrate
+```
 
 ## PgAdmin4
 
